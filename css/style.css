@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  /* --blue: #000; */
+  --blue: #0a192f;
+  --lightslategray: #8892b0;
+  --lavender: #ccd6f6;
+  --aquamarine: #62fbd6;
+  --slategray: #717c98;
+  --smallfonts: "Redressed";
+}
+
+body {
+  /* background-color: var(--blue); */
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.brand_logo {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/Manikandan.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.brand_name {
+  font-size: 14px;
+}
+.home {
+  width: 80%;
+  padding: 6rem 0 0 9rem;
+}
+
+.home h3 {
+  color: var(--aquamarine);
+  font-family: var(--smallfonts);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  margin: 1rem 0;
+}
+.home .myName {
+  color: var(--lavender);
+}
+.home .myJob {
+  color: var(--lightslategray);
+}
+.home .myName,
+.home .myJob {
+  font-size: 6vw;
+  font-family: TTNormas;
+  word-spacing: 10px;
+  font-weight: bold;
+  margin: 1rem 0;
+  /* text-shadow: 5px 2px 5px grey; */
+}
+.home p {
+  margin: 1rem 0;
+  color: var(--slategray);
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.yearbtn {
+  font-size: 10px;
+}
+.degree {
+  font-weight: bold;
+  color: var(--blue);
+}
+.college {
+  color: var(--slategray);
+  font-size: 12px;
+}
+.percentage {
+  font-size: 12px;
+}
+.edutitle {
+  font-family: TTNormas;
+}
+.skill {
+  height: 100px;
+}
+.contactimg {
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/Manikandan.jpg);
+  background-position: center;
+  background-size: contain;
+  /* border-radius: 20% 50%; */
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: #bdbdbd;
+}
+.contactdetail {
+  display: flex;
+}
+.contactdetail p {
+  padding: 0;
+}
+.contactdetail p:first-child {
+  font-weight: bold;
+  color: var(--blue);
+  width: 150px;
+}
+.contactdetail p:nth-child(2) {
+  color: var(--lightslategray);
+}
+
+@media (max-width: 576px) {
+  .home {
+    padding: 5rem 2rem;
+  }
+  .contactimg {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .contactdetail p:first-child {
+    font-weight: bold;
+    color: var(--blue);
+    font-size: 3vw;
+    width: 25% !important;
+  }
+  .contactdetail p:nth-child(2) {
+    color: var(--lightslategray);
+    font-size: 3vw;
+  }
+}
