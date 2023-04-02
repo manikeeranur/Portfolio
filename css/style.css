@@ -99,13 +99,21 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-color: #bdbdbd;
+  border: 5px solid var(--slategray);
 }
 .contactdetail {
   display: flex;
 }
 .contactdetail p {
   padding: 0;
+  margin: 5px 0 0;
+  font-family: cursive;
 }
+.contactdetail a {
+  font-family: cursive;
+  color: var(--lightslategray);
+}
+
 .contactdetail p:first-child {
   font-weight: bold;
   color: var(--blue);
@@ -114,7 +122,16 @@ body {
 .contactdetail p:nth-child(2) {
   color: var(--lightslategray);
 }
+.socialmedia a {
+  text-decoration: none;
+}
 
+.Name {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--blue);
+}
 @media (max-width: 576px) {
   .home {
     padding: 5rem 2rem;
